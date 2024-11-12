@@ -9,7 +9,7 @@ export interface IConfig {
     }
 }
 
-export const config: IConfig = {
+export const internalConfig: IConfig = {
     nodeEnv: nodeConfig.get('nodeEnv'),
     botToken: nodeConfig.get('botToken'),
     app: nodeConfig.get('app')

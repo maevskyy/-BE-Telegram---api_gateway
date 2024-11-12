@@ -4,7 +4,7 @@ import { IConfig } from 'src/common/config'
 dotenvConfig({ path: '.env.local' })
 
 export default {
-    nodeEnv: process.env.NODE_ENV || 'test',
+    nodeEnv: process.env.NODE_ENV || 'proudction',
     app: {
         port: Number.parseInt(process.env.APP_PORT || '8000', 10),
         name: process.env.APP_NAME || 'api-gateway',

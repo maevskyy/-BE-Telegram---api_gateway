@@ -6,19 +6,19 @@ const webAppUrl = 'https://25.26.32.238:5173/reactjs-template'
 
 @Update()
 export class AppUpdate {
-  constructor(
-    @InjectBot() private readonly bot: Telegraf<Context>
-  ) { }
+  // constructor(
+  //   @InjectBot() private readonly bot: Telegraf<Context>
+  // ) { }
 
-  @Start()
-  async startCommand(ctx: Context) {
-    await ctx.reply('Hi friend')
-  }
+  // @Start()
+  // async startCommand(ctx: Context) {
+  //   await ctx.reply('Hi friend')
+  // }
 
-  @On('text')
-  async textTest(ctx: Context) {
-    ctx.sendMessage('Privet', { reply_markup: { inline_keyboard: [[{ text: 'Привет', web_app: { url: webAppUrl } }]] } })
-  }
+  // @On('text')
+  // async textTest(ctx: Context) {
+  //   ctx.sendMessage('Privet', { reply_markup: { inline_keyboard: [[{ text: 'Привет', web_app: { url: webAppUrl } }]] } })
+  // }
 
   // @On('voice')
   // async onVoiceMessage(ctx: Context) {

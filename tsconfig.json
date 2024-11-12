@@ -6,6 +6,10 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "strict": true,
     "target": "ES2021",
     "sourceMap": true,
     "outDir": "./dist",
@@ -16,6 +20,25 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
-  }
-}
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "y/contracts": [
+        "libs/contracts/src"
+      ],
+      "y/contracts/*": [
+        "libs/contracts/src/*"
+      ],
+      "@/*":[
+        "src/*"
+      ],
+      "@Common": [
+        "src/common/*"
+      ],
+      "@App":[
+        "src/app/*"
+      ],
+      "@Modules":[
+        "src/modules/*"
+      ]
+    }
+  }}
